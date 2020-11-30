@@ -2,11 +2,10 @@
 const fs = require('fs');
 //added requirement to the inquirer module that will be used to ask questions and get the input that will be added to the readme file.
 const inquirer = require('inquirer');
-const generateMarkdown = require('./utils/generateMarkdown.js');
 //added requirement to the "generateMarkdown" file that has the template literal for formatting the readme file content
-const generate = require('./utils/generateMarkdown.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
-//categories to be used in the README file
+//categories to be used in the README file:
 // title and sections for Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
 
 // array of questions for user
@@ -63,7 +62,7 @@ inquirer
 
         //write information to README file
         fs.appendFile('README.md', JSON.stringify(data, null, '\t'), (err) =>
-            err ? console.error(err) : generateMarkdown()
+            err ? console.error(err) : generateMarkdown
         )
     })
 
