@@ -60,14 +60,14 @@ inquirer
         },
     ])
     .then((data) => {
-        generateMarkdown
+
+        //write information to README file
+        fs.appendFile('README.md', JSON.stringify(data, null, '\t'), (err) =>
+            err ? console.error(err) : generateMarkdown()
+        )
     })
 
     
-//write information to README file
-fs.appendFile('README.md', generateMarkdown, (err) =>
-    err ? console.error(err) : generateMarkdown()
-)
 
 // function to write README file
 // function writeToFile(fileName, data) {
