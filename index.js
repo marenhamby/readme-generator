@@ -61,8 +61,8 @@ inquirer
     .then((data) => {
 
         //write information to README file
-        fs.appendFile('README.md', JSON.stringify(data, null, '\t'), (err) =>
-            err ? console.error(err) : generateMarkdown
+        fs.writeFile('README.md', generateMarkdown(data), (err) =>
+            err ? console.error(err) : console.log("Success!")
         )
     })
 
