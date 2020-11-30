@@ -35,7 +35,22 @@ const questions = [
         message: 'What are the contribution guidelines?',
         name: 'contribute',
     }
-
+    {
+        type: 'list',
+        message: 'What is the license?',
+        name: 'license',
+        choices: ['choice1', 'choice2', 'choice3'],
+    }
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'username',
+    }
+    {
+        type: 'input',
+        message: 'What is your email?',
+        name: 'email',
+    }
 ];
 
 // function to write README file
