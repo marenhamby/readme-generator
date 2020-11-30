@@ -2,6 +2,7 @@
 const fs = require('fs');
 //added requirement to the inquirer module that will be used to ask questions and get the input that will be added to the readme file.
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 //added requirement to the "generateMarkdown" file that has the template literal for formatting the readme file content
 const generate = require('./utils/generateMarkdown.js');
 
@@ -37,6 +38,11 @@ inquirer
             name: 'contribute',
         },
         {
+            type: 'input',
+            message: 'What are the testing instructions?',
+            name: 'test',
+        },
+        {
             type: 'list',
             message: 'What is the license?',
             name: 'license',
@@ -53,17 +59,20 @@ inquirer
             name: 'email',
         },
     ])
-   
-const questions =
+    .then((data) => generateMarkdown)
 
-    // function to write README file
-    function writeToFile(fileName, data) {
-    }
+    
 
-// function to initialize program
-function init() {
+// function to write README file
+function writeToFile(fileName, data) {
 
 }
 
-// function call to initialize program
-init();
+
+// // function to initialize program
+// function init() {
+
+// }
+
+// // function call to initialize program
+// init();
