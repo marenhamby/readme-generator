@@ -59,15 +59,20 @@ inquirer
             name: 'email',
         },
     ])
-    .then((data) => generateMarkdown)
+    .then((data) => {
+        generateMarkdown
+    })
 
     
+//write information to README file
+fs.appendFile('README.md', generateMarkdown, (err) =>
+    err ? console.error(err) : generateMarkdown()
+)
 
 // function to write README file
-function writeToFile(fileName, data) {
+// function writeToFile(fileName, data) {
 
-}
-
+// }
 
 // // function to initialize program
 // function init() {
