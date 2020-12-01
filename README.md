@@ -13,7 +13,11 @@ Also, in order to save space, I created a .gitignore so these downloaded items d
 
 ## Sample
 Here's a video running through the code in the terminal:
-![Example Run](./assets/README-generator_Demo.webm)
+
+<a href="https://drive.google.com/file/d/1q37-N02EYPM-Dbjky9F9uISZSY1I4bOB/preview
+" target="_blank"><img src="./assets/README-photo.PNG" 
+alt="Example Run" width="240" height="180"/></a>
+
 
 ### Contact
 Here's a link to my GitHub page for other work! https://github.com/marenhamby
