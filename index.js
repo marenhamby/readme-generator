@@ -45,7 +45,7 @@ inquirer
             type: 'list',
             message: 'What is the license?',
             name: 'license',
-            choices: ['choice1', 'choice2', 'choice3'],
+            choices: ['MIT'],
         },
         {
             type: 'input',
