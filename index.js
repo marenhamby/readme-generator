@@ -45,7 +45,7 @@ inquirer
             type: 'list',
             message: 'What is the license?',
             name: 'license',
-            choices: ['MIT'],
+            choices: ['Apache', 'MIT', 'GCN'],
         },
         {
             type: 'input',
