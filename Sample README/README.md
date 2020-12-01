@@ -1,4 +1,4 @@
-# Title of README
+# Title README
   
   ![license tag](https://img.shields.io/badge/license-MIT-green)
   
@@ -22,21 +22,21 @@
   Description of program
 
   ## Installation
-  Install 
+  Instructions 
   
   ## Usage
-  Usage Info
+  Information
   
   ## Contributing
-  Guidelines
+  Guidelines here
   
   ## Tests
   Testing info
   
   ## Questions
-  GitHub username: user-name
+  GitHub username: username
 
-  GitHub profile: https://github.com/user-name
+  GitHub profile: https://github.com/username
 
   You can reach me at email@email.com for any questions!
 
