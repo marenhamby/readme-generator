@@ -17,6 +17,8 @@ function generateMarkdown(data) {
   * [Tests](#tests)
   
   * [Questions](#questions)
+
+  * [License](#license)
   
   ## Description
   ${data.description}
@@ -39,6 +41,9 @@ function generateMarkdown(data) {
   GitHub link: https://github.com/${data.username}
 
   You can reach me at ${data.email} for any questions!
+
+  ## License
+  This application is covered under the following license: ${data.license}
   `;
 }
 
